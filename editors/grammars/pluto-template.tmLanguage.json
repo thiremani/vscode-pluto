@@ -40,7 +40,7 @@
 					"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()",
 					"captures": {
 						"1": {
-							"name": "variable.function.pluto"
+							"name": "entity.name.function.pluto"
 						}
 					}
 				}

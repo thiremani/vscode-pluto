@@ -19,12 +19,12 @@
 					{
 						"name": "meta.function-call.pluto",
 						"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()",
-						"captures": {
-							"1": {
-								"name": "variable.function.pluto"
+							"captures": {
+								"1": {
+									"name": "entity.name.function.pluto"
+								}
 							}
 						}
-					}
 				]
 			},
 		"identifier": {

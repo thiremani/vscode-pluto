@@ -17,7 +17,7 @@ cd editors/vscode
 ## Scope Map (quick reference)
 
 - `.pt` top-level constant definition names: `entity.name.constant.pluto`
-- Function call names (`Square(a)`): `variable.function.pluto`
+- Function names before `(` (`Square(a)`, `z = SumSquares(a, b)`): `entity.name.function.pluto`
 - General identifiers: `variable.other.readwrite.pluto`
 
 Note: to keep behavior predictable across themes and editors, function-definition names
