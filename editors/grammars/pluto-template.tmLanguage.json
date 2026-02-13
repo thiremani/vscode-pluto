@@ -14,6 +14,9 @@
 		},
 		{
 			"include": "#function-call"
+		},
+		{
+			"include": "#identifier"
 		}
 	],
 	"repository": {
@@ -54,6 +57,14 @@
 				{
 					"name": "entity.name.function.call.pluto",
 					"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()"
+				}
+			]
+		},
+		"identifier": {
+			"patterns": [
+				{
+					"name": "variable.other.readwrite.pluto",
+					"match": "(?<![\\p{L}\\p{N}_])[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*(?![\\p{L}\\p{N}_])"
 				}
 			]
 		}
