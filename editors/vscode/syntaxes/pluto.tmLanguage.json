@@ -50,16 +50,28 @@
 							"name": "punctuation.terminator.heap-string.pluto"
 						}
 					},
-					"patterns": [
-						{
-							"name": "constant.character.escape.pluto",
-							"match": "\\\\[nt\"\\\\]"
-						},
-						{
-							"name": "variable.other.interpolation.pluto",
-							"match": "-[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*"
-						}
-					]
+						"patterns": [
+							{
+								"name": "constant.character.escape.pluto",
+								"match": "\\\\[nt\"\\\\]"
+							},
+							{
+								"name": "meta.interpolation.format.pluto",
+								"match": "(-[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)(%(?:\\([^)]+\\))?[-+#0 ]*(?:\\d+|\\([^)]+\\))?(?:\\.(?:\\d+|\\([^)]+\\)))?[a-zA-Z%])",
+								"captures": {
+									"1": {
+										"name": "variable.other.interpolation.pluto"
+									},
+									"2": {
+										"name": "constant.other.format-spec.pluto"
+									}
+								}
+							},
+							{
+								"name": "variable.other.interpolation.pluto",
+								"match": "-[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*"
+							}
+						]
 				}
 			]
 		},
