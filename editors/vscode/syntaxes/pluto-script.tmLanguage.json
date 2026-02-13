@@ -16,12 +16,12 @@
 	"repository": {
 		"function-call": {
 			"patterns": [
-				{
-					"name": "entity.name.function.call.pluto",
-					"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()"
-				}
-			]
-		},
+					{
+						"name": "support.function.pluto",
+						"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()"
+					}
+				]
+			},
 		"identifier": {
 			"patterns": [
 				{
