@@ -34,6 +34,10 @@
 				"extensions": [
 					".pt"
 				],
+				"icon": {
+					"light": "./icons/pluto-pt.png",
+					"dark": "./icons/pluto-pt.png"
+				},
 				"configuration": "./language-configuration.json"
 			},
 			{
@@ -45,6 +49,10 @@
 				"extensions": [
 					".spt"
 				],
+				"icon": {
+					"light": "./icons/pluto-spt.png",
+					"dark": "./icons/pluto-spt.png"
+				},
 				"configuration": "./language-configuration.json"
 			}
 		],
