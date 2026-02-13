@@ -5,6 +5,15 @@
 	"version": "0.0.1",
 	"publisher": "thiremani",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thiremani/vscode-pluto.git",
+		"directory": "editors/vscode"
+	},
+	"homepage": "https://github.com/thiremani/vscode-pluto/tree/main/editors/vscode",
+	"bugs": {
+		"url": "https://github.com/thiremani/vscode-pluto/issues"
+	},
 	"engines": {
 		"vscode": "^1.90.0"
 	},

@@ -1,0 +1,3 @@
+scripts/**
+*.vsix
+.DS_Store
