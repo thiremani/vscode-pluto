@@ -36,16 +36,20 @@ cd editors/vscode
 
 Run extension host (recommended):
 
+From the repository root:
+
 ```sh
-code --extensionDevelopmentPath=/Users/tejas/Downloads/vscode-pluto/editors/vscode /Users/tejas/Downloads/pluto
+code --extensionDevelopmentPath="$PWD/editors/vscode" <path-to-pluto-repo>
 ```
 
 Then open any `.pt`/`.spt` file in the launched window.
 
 Alternative local install test:
 
+From the repository root:
+
 ```sh
-cd /Users/tejas/Downloads/vscode-pluto/editors/vscode
+cd editors/vscode
 npx @vscode/vsce@3.7.1 package
 code --install-extension pluto-*.vsix --force
 ```
