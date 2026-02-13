@@ -1,6 +1,6 @@
 {
-	"name": "pluto-pt",
-	"displayName": "Pluto PT/SPT",
+	"name": "pluto",
+	"displayName": "Pluto Language",
 	"description": "Syntax highlighting for Pluto (.pt and .spt).",
 	"version": "0.0.1",
 	"publisher": "thiremani",

@@ -1,4 +1,4 @@
-# Pluto PT VS Code Extension
+# Pluto VS Code Extension
 
 Syntax highlighting support for Pluto language files:
 
@@ -34,5 +34,5 @@ Launch extension host:
 
 ## Extension Identity
 
-- VS Code extension package name: `pluto-pt`
-- Suggested repository name: `pluto-pt-vscode`
+- VS Code extension ID: `thiremani.pluto`
+- Repository name: `vscode-pluto`
