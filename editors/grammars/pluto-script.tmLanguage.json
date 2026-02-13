@@ -26,7 +26,7 @@
 			"patterns": [
 				{
 					"name": "variable.other.readwrite.pluto",
-					"match": "(?<![\\p{L}\\p{N}_])[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*(?![\\p{L}\\p{N}_])"
+					"match": "(?<![\\p{L}_])[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*(?![\\p{L}\\p{N}_])"
 				}
 			]
 		}
