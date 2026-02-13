@@ -2,7 +2,7 @@
 	"name": "pluto",
 	"displayName": "Pluto Language",
 	"description": "Syntax highlighting for Pluto (.pt and .spt).",
-	"version": "0.1.8",
+	"version": "0.1.9",
 	"publisher": "thiremani",
 	"license": "MIT",
 	"repository": {
@@ -34,6 +34,10 @@
 				"extensions": [
 					".pt"
 				],
+				"icon": {
+					"light": "./icons/pluto-dwarf.svg",
+					"dark": "./icons/pluto-dwarf.svg"
+				},
 				"configuration": "./language-configuration.json"
 			},
 			{
