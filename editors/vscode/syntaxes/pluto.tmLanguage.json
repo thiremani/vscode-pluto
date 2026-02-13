@@ -67,7 +67,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.float.pluto",
-					"match": "(?<![\\p{L}\\p{N}_])(?:\\d+\\.\\d*|\\.\\d+)(?![\\p{L}\\p{N}_])"
+					"match": "(?<![\\p{L}\\p{N}_])(?:\\d+\\.\\d*|\\.\\d+)(?![\\p{N}_])"
 				}
 			]
 		},
@@ -75,7 +75,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.integer.pluto",
-					"match": "(?<![\\p{L}\\p{N}_])\\d+(?![\\p{L}_]|\\.)"
+					"match": "(?<![\\p{L}\\p{N}_])\\d+(?![\\p{N}_]|\\.)"
 				}
 			]
 		},
