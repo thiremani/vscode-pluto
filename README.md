@@ -1,8 +1,14 @@
 # Pluto VS Code Extension
 
-Syntax highlighting support for Pluto language files:
+Syntax highlighting support for the **Pluto Programming Language**:
 
-- `.pt` (template files)
+- Language repository: https://github.com/thiremani/pluto
+
+This extension is for Pluto language source files and is not related to other projects that also use the name "Pluto".
+
+Supported file types:
+
+- `.pt` (code mode files)
 - `.spt` (script files)
 
 ## Repository Layout
