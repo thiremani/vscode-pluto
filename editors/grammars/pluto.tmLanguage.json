@@ -1,0 +1,103 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Pluto",
+	"scopeName": "source.pluto.common",
+	"patterns": [
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#string"
+		},
+		{
+			"include": "#float"
+		},
+		{
+			"include": "#integer"
+		},
+		{
+			"include": "#keyword"
+		},
+		{
+			"include": "#operator"
+		}
+	],
+	"repository": {
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line.number-sign.pluto",
+					"match": "#.*$"
+				}
+			]
+		},
+		"string": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.pluto",
+					"begin": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.pluto"
+						}
+					},
+					"end": "(\")(\\.)?",
+					"endCaptures": {
+						"1": {
+							"name": "punctuation.definition.string.end.pluto"
+						},
+						"2": {
+							"name": "punctuation.terminator.heap-string.pluto"
+						}
+					},
+					"patterns": [
+						{
+							"name": "constant.character.escape.pluto",
+							"match": "\\\\[nt\"\\\\]"
+						},
+						{
+							"name": "variable.other.interpolation.pluto",
+							"match": "-[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*"
+						}
+					]
+				}
+			]
+		},
+		"float": {
+			"patterns": [
+				{
+					"name": "constant.numeric.float.pluto",
+					"match": "(?<![\\p{L}\\p{N}_])(?:\\d+\\.\\d*|\\.\\d+)(?![\\p{L}\\p{N}_])"
+				}
+			]
+		},
+		"integer": {
+			"patterns": [
+				{
+					"name": "constant.numeric.integer.pluto",
+					"match": "(?<![\\p{L}\\p{N}_])\\d+(?![\\p{L}_]|\\.)"
+				}
+			]
+		},
+		"keyword": {
+			"patterns": [
+				{
+					"name": "keyword.operator.logical.pluto",
+					"match": "\\bor\\b"
+				},
+				{
+					"name": "keyword.control.flow.pluto",
+					"match": "\\breturn\\b"
+				}
+			]
+		},
+		"operator": {
+			"patterns": [
+				{
+					"name": "keyword.operator.pluto",
+					"match": "==|!=|<=|>=|>>>|<<|>>|[=,:()\\[\\]{}]|[+\\-*/%^&|~<>]|[√∛∜⋅÷⊕⊻?@$\\\\]"
+				}
+			]
+		}
+	}
+}

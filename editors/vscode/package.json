@@ -1,0 +1,59 @@
+{
+	"name": "pluto-pt",
+	"displayName": "Pluto PT/SPT",
+	"description": "Syntax highlighting for Pluto (.pt and .spt).",
+	"version": "0.0.1",
+	"publisher": "thiremani",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.90.0"
+	},
+	"scripts": {
+		"sync-grammars": "./scripts/sync-grammars.sh"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "pluto-template",
+				"aliases": [
+					"Pluto Template",
+					"pluto-pt"
+				],
+				"extensions": [
+					".pt"
+				],
+				"configuration": "./language-configuration.json"
+			},
+			{
+				"id": "pluto-script",
+				"aliases": [
+					"Pluto Script",
+					"pluto-spt"
+				],
+				"extensions": [
+					".spt"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"scopeName": "source.pluto.common",
+				"path": "./syntaxes/pluto.tmLanguage.json"
+			},
+			{
+				"language": "pluto-template",
+				"scopeName": "source.pluto.template",
+				"path": "./syntaxes/pluto-template.tmLanguage.json"
+			},
+			{
+				"language": "pluto-script",
+				"scopeName": "source.pluto.script",
+				"path": "./syntaxes/pluto-script.tmLanguage.json"
+			}
+		]
+	}
+}

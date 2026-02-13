@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Pluto Template",
+	"scopeName": "source.pluto.template",
+	"patterns": [
+		{
+			"include": "source.pluto.common"
+		},
+		{
+			"include": "#top-level-constant"
+		},
+		{
+			"include": "#function-definition"
+		},
+		{
+			"include": "#function-call"
+		}
+	],
+	"repository": {
+		"top-level-constant": {
+			"patterns": [
+				{
+					"name": "meta.constant.definition.pluto",
+					"match": "^([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*(?:\\s*,\\s*[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)*)(\\s*=)(?!\\s*[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*\\s*\\()",
+					"captures": {
+						"1": {
+							"name": "variable.other.constant.pluto"
+						},
+						"2": {
+							"name": "keyword.operator.assignment.pluto"
+						}
+					}
+				}
+			]
+		},
+		"function-definition": {
+			"patterns": [
+				{
+					"name": "meta.function.definition.pluto",
+					"match": "^(\\s*[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*(?:\\s*,\\s*[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)*\\s*=\\s*)([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()",
+					"captures": {
+						"1": {
+							"name": "meta.function.signature.pluto"
+						},
+						"2": {
+							"name": "entity.name.function.definition.pluto"
+						}
+					}
+				}
+			]
+		},
+		"function-call": {
+			"patterns": [
+				{
+					"name": "entity.name.function.call.pluto",
+					"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()"
+				}
+			]
+		}
+	}
+}

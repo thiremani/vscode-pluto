@@ -1,0 +1,23 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Pluto Script",
+	"scopeName": "source.pluto.script",
+	"patterns": [
+		{
+			"include": "source.pluto.common"
+		},
+		{
+			"include": "#function-call"
+		}
+	],
+	"repository": {
+		"function-call": {
+			"patterns": [
+				{
+					"name": "entity.name.function.call.pluto",
+					"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()"
+				}
+			]
+		}
+	}
+}
