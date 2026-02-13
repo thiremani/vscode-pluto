@@ -2,16 +2,16 @@
 	"showLanguageModeIcons": true,
 	"iconDefinitions": {
 		"_file": {
-			"iconPath": "./icons/file.svg"
+			"iconPath": "../icons/file.svg"
 		},
 		"_folder": {
-			"iconPath": "./icons/folder.svg"
+			"iconPath": "../icons/folder.svg"
 		},
 		"_folder_open": {
-			"iconPath": "./icons/folder-open.svg"
+			"iconPath": "../icons/folder-open.svg"
 		},
 		"_pluto": {
-			"iconPath": "./icons/pluto-dwarf.png"
+			"iconPath": "../icons/pluto-dwarf.png"
 		}
 	},
 	"file": "_file",

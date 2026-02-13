@@ -2,7 +2,7 @@
 	"name": "pluto",
 	"displayName": "Pluto Language",
 	"description": "Syntax highlighting for Pluto (.pt and .spt).",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"publisher": "thiremani",
 	"license": "MIT",
 	"repository": {
