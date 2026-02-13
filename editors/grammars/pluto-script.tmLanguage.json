@@ -17,8 +17,13 @@
 		"function-call": {
 			"patterns": [
 					{
-						"name": "support.function.pluto",
-						"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()"
+						"name": "meta.function-call.pluto",
+						"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()",
+						"captures": {
+							"1": {
+								"name": "variable.function.pluto"
+							}
+						}
 					}
 				]
 			},

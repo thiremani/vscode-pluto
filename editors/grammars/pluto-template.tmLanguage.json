@@ -27,7 +27,7 @@
 						"match": "^([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*(?:\\s*,\\s*[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)*)(\\s*=)(?!\\s*[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*\\s*\\()",
 						"captures": {
 							"1": {
-								"name": "constant.other.pluto"
+								"name": "entity.name.constant.pluto"
 							},
 							"2": {
 								"name": "keyword.operator.assignment.pluto"
@@ -49,7 +49,7 @@
 								"name": "keyword.operator.assignment.pluto"
 							},
 							"4": {
-								"name": "entity.name.function.pluto"
+								"name": "entity.name.function.definition.pluto"
 							}
 						}
 					}
@@ -58,8 +58,13 @@
 		"function-call": {
 			"patterns": [
 					{
-						"name": "support.function.pluto",
-						"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()"
+						"name": "meta.function-call.pluto",
+						"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()",
+						"captures": {
+							"1": {
+								"name": "variable.function.pluto"
+							}
+						}
 					}
 				]
 			},

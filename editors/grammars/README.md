@@ -13,3 +13,13 @@ To sync after grammar changes:
 cd editors/vscode
 ./scripts/sync-grammars.sh
 ```
+
+## Scope Map (quick reference)
+
+- `.pt` top-level constant definition names: `entity.name.constant.pluto`
+- `.pt` function definition names (`z = SumSquares(a, b)`): `entity.name.function.definition.pluto`
+- Function call names (`Square(a)`): `variable.function.pluto`
+- General identifiers: `variable.other.readwrite.pluto`
+
+Note: TextMate grammars are regex-based and not semantic parsers. They can distinguish
+common syntactic forms, but they cannot fully resolve symbol kinds across scopes/files.
