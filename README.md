@@ -51,7 +51,7 @@ From the repository root:
 ```sh
 cd editors/vscode
 npx @vscode/vsce@3.7.1 package
-code --install-extension pluto-*.vsix --force
+code --install-extension pluto-<version>.vsix --force
 ```
 
 ## Extension Identity
