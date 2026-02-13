@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+	<path fill="#2a2f45" d="M14 4h28l8 8v48H14z"/>
+	<path fill="#3a4163" d="M42 4v8h8z"/>
+	<rect x="16" y="22" width="32" height="20" rx="4" fill="#16a36d"/>
+	<text x="32" y="36" text-anchor="middle" fill="#ffffff" font-family="Menlo, Consolas, monospace" font-size="11" font-weight="700">SPT</text>
+</svg>
