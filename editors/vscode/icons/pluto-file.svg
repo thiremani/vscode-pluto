@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-	<path fill="#25304a" d="M14 4h28l8 8v48H14z"/>
-	<path fill="#3a4b72" d="M42 4v8h8z"/>
-	<circle cx="32" cy="33" r="9.5" fill="#4ea3ff"/>
-	<ellipse cx="32" cy="33" rx="15" ry="5.8" fill="none" stroke="#d7ecff" stroke-width="2"/>
-	<circle cx="27.5" cy="29.5" r="2.4" fill="#d7ecff" opacity="0.85"/>
+	<g transform="translate(0 1)">
+		<circle cx="32" cy="31" r="12" fill="#4ea3ff"/>
+		<ellipse cx="32" cy="31" rx="18" ry="7.2" fill="none" stroke="#d7ecff" stroke-width="2.8"/>
+		<circle cx="27.6" cy="27.2" r="2.8" fill="#d7ecff"/>
+		<circle cx="40.3" cy="39.2" r="1.9" fill="#9fd0ff"/>
+	</g>
 </svg>
