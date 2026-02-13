@@ -1,3 +1,7 @@
 scripts/**
 *.vsix
 .DS_Store
+icons/pluto-pt.png
+icons/pluto-spt.png
+icons/pluto-pt.svg
+icons/pluto-spt.svg

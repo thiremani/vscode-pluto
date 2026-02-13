@@ -10,22 +10,19 @@
 		"_folder_open": {
 			"iconPath": "./icons/folder-open.svg"
 		},
-		"_pt": {
-			"iconPath": "./icons/pluto-pt.svg"
-		},
-		"_spt": {
-			"iconPath": "./icons/pluto-spt.svg"
+		"_pluto": {
+			"iconPath": "./icons/pluto-file.svg"
 		}
 	},
 	"file": "_file",
 	"folder": "_folder",
 	"folderExpanded": "_folder_open",
 	"fileExtensions": {
-		"pt": "_pt",
-		"spt": "_spt"
+		"pt": "_pluto",
+		"spt": "_pluto"
 	},
 	"languageIds": {
-		"pluto-template": "_pt",
-		"pluto-script": "_spt"
+		"pluto-template": "_pluto",
+		"pluto-script": "_pluto"
 	}
 }
