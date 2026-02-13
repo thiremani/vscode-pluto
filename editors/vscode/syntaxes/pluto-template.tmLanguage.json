@@ -37,7 +37,7 @@
 			"patterns": [
 				{
 					"name": "meta.function-call.pluto",
-					"match": "\\b([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()",
+					"match": "(?<![\\p{L}\\p{N}_\\p{M}])([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()",
 					"captures": {
 						"1": {
 							"name": "entity.name.function.pluto"

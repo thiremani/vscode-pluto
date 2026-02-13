@@ -50,37 +50,37 @@
 							"name": "punctuation.terminator.heap-string.pluto"
 						}
 					},
-						"patterns": [
-							{
-								"name": "constant.character.escape.pluto",
-								"match": "\\\\[nt\"\\\\]"
-							},
-							{
-								"name": "meta.interpolation.format.pluto",
-								"match": "(-[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)(%(?:\\((?:-)?([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\))?[-+#0 ]*(?:(\\d+)|\\((?:-)?([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\))?(?:\\.(?:(\\d+)|\\((?:-)?([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\)))?[a-zA-Z%])",
-								"captures": {
-									"1": {
-										"name": "variable.other.interpolation.pluto"
-									},
-									"2": {
-										"name": "constant.other.format-spec.pluto"
-									},
-									"3": {
-										"name": "variable.other.interpolation.pluto"
-									},
-									"5": {
-										"name": "variable.other.interpolation.pluto"
-									},
-									"7": {
-										"name": "variable.other.interpolation.pluto"
-									}
+					"patterns": [
+						{
+							"name": "constant.character.escape.pluto",
+							"match": "\\\\[nt\"\\\\]"
+						},
+						{
+							"name": "meta.interpolation.format.pluto",
+							"match": "(-[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)(%(?:\\((?:-)?([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\))?[-+#0 ]*(?:(\\d+)|\\((?:-)?([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\))?(?:\\.(?:(\\d+)|\\((?:-)?([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\)))?[a-zA-Z%])",
+							"captures": {
+								"1": {
+									"name": "variable.other.interpolation.pluto"
+								},
+								"2": {
+									"name": "constant.other.format-spec.pluto"
+								},
+								"3": {
+									"name": "variable.other.interpolation.pluto"
+								},
+								"5": {
+									"name": "variable.other.interpolation.pluto"
+								},
+								"7": {
+									"name": "variable.other.interpolation.pluto"
 								}
-							},
-							{
-								"name": "variable.other.interpolation.pluto",
-								"match": "-[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*"
 							}
-						]
+						},
+						{
+							"name": "variable.other.interpolation.pluto",
+							"match": "-[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*"
+						}
+					]
 				}
 			]
 		},
