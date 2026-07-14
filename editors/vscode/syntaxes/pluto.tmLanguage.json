@@ -16,9 +16,6 @@
 			"include": "#integer"
 		},
 		{
-			"include": "#keyword"
-		},
-		{
 			"include": "#operator"
 		}
 	],
@@ -41,7 +38,7 @@
 							"name": "punctuation.definition.string.begin.pluto"
 						}
 					},
-					"end": "(\")(\\.)?",
+					"end": "(\")(\\.)?|(?=$)",
 					"endCaptures": {
 						"1": {
 							"name": "punctuation.definition.string.end.pluto"
@@ -100,23 +97,32 @@
 				}
 			]
 		},
-		"keyword": {
-			"patterns": [
-				{
-					"name": "keyword.operator.logical.pluto",
-					"match": "\\bor\\b"
-				},
-				{
-					"name": "keyword.control.flow.pluto",
-					"match": "\\breturn\\b"
-				}
-			]
-		},
 		"operator": {
 			"patterns": [
 				{
 					"name": "keyword.operator.pluto",
 					"match": "==|!=|<=|>=|>>>|<<|>>|[=,:()\\[\\]{}]|[+\\-*/%^&|~<>]|[√∛∜⋅÷⊕⊻?@$\\\\]"
+				}
+			]
+		},
+		"function-call": {
+			"patterns": [
+				{
+					"name": "meta.function-call.pluto",
+					"match": "(?<![\\p{L}\\p{N}_\\p{M}])([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()",
+					"captures": {
+						"1": {
+							"name": "entity.name.function.pluto"
+						}
+					}
+				}
+			]
+		},
+		"identifier": {
+			"patterns": [
+				{
+					"name": "variable.other.readwrite.pluto",
+					"match": "(?<![\\p{L}_])[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*(?![\\p{L}\\p{N}_])"
 				}
 			]
 		}

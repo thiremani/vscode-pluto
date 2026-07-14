@@ -10,10 +10,10 @@
 			"include": "#top-level-constant"
 		},
 		{
-			"include": "#function-call"
+			"include": "source.pluto.common#function-call"
 		},
 		{
-			"include": "#identifier"
+			"include": "source.pluto.common#identifier"
 		}
 	],
 	"repository": {
@@ -30,27 +30,6 @@
 							"name": "keyword.operator.assignment.pluto"
 						}
 					}
-				}
-			]
-		},
-		"function-call": {
-			"patterns": [
-				{
-					"name": "meta.function-call.pluto",
-					"match": "(?<![\\p{L}\\p{N}_\\p{M}])([\\p{L}_][\\p{L}\\p{N}_\\p{M}]*)\\s*(?=\\()",
-					"captures": {
-						"1": {
-							"name": "entity.name.function.pluto"
-						}
-					}
-				}
-			]
-		},
-		"identifier": {
-			"patterns": [
-				{
-					"name": "variable.other.readwrite.pluto",
-					"match": "(?<![\\p{L}_])[\\p{L}_][\\p{L}\\p{N}_\\p{M}]*(?![\\p{L}\\p{N}_])"
 				}
 			]
 		}

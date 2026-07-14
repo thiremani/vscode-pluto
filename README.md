@@ -22,7 +22,6 @@ Supported file types:
 - string literals (`"..."`) including heap-string suffix form (`"...".`)
 - numeric literals (integers and floats)
 - identifier highlighting in `.pt` and `.spt`
-- keywords: `or`, `return`
 - `.pt` function definition highlighting
 - `.pt` top-level constant definition highlighting
 - function call highlighting in `.pt` and `.spt`
